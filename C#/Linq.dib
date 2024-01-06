@@ -89,14 +89,14 @@ Initilizing
 
 public class Customer
 {
-    public int CustomerID { get; set; }
+    public int CustomerId { get; set; }
     public string Name { get; set; }
 }
 
 public class Order
 {
     public int OrderID { get; set; }
-    public int CustomerID { get; set; }
+    public int CustomerId { get; set; }
     public decimal Cost { get; set; }
 }
 
@@ -304,6 +304,7 @@ customerOrderCountQuerySyntax
 #!csharp
 
 var selectTop3InLambdaSyntax = orders.Where(o => o.CustomerID == 8).Take(3);
+selectTop3InLambdaSyntax.Display("application/json");
 
 var selectTop3InQuerySyntax =   (from o in orders
             where o.CustomerID == 8            
@@ -314,10 +315,56 @@ selectTop3InQuerySyntax.Display("application/json");
 #!csharp
 
 var skipFirst2AndReturn2AfterInLambdaSyntax = orders.Where(o => o.CustomerID == 8).Skip(2).Take(2);
+skipFirst2AndReturn2AfterInLambdaSyntax.Display();
 
 var skipFirst2AndReturn2AfterInQuerySyntax = (from o in orders            
-                                            where o.CustomerID == 8            
-                                            orderby o.Cost            
+                                            where o.CustomerID == 8 
                                             select o).Skip(2).Take(2); 
 
-skipFirst2AndReturn2AfterInQuerySyntax
+skipFirst2AndReturn2AfterInQuerySyntax.Display();
+
+#!markdown
+
+### Element Operators
+
+#!markdown
+
+**Single**
+
+Exact one item exist othewise throw exception
+
+**SingleOrDefault**
+
+Exact one or returns default (i.e. null or 0 etc depending on datatype) if no item exist
+
+#!csharp
+
+var singleCustomerInLambdaSyntax = customers.Single(c => c.CustomerID == 8);
+singleCustomerInLambdaSyntax.Display();
+
+var singleCustomerInQuerySyntax = (from c in customers
+                                    where c.CustomerID == 8
+                                    select c).Single();
+singleCustomerInQuerySyntax.Display();
+
+var singleOrDefaultCustomerInLambdaSyntax = customers.SingleOrDefault(c => c.CustomerID == 88);
+singleOrDefaultCustomerInLambdaSyntax.Display();
+
+#!markdown
+
+**First** first item if eixist, thorws exception if not exist
+
+**FirstOrDefault** first item if exist, or return default value
+
+**Last** last item if eixist, thorws exception if not exist
+
+**LastOrDefault** last item if exist, or return default value
+
+**ElementAt** item at index if eixist, thorws exception if not exist
+
+**ElementAtOrDefault** item at index if exist, or return default value
+
+#!csharp
+
+customers.First().Display();
+customers.Where(c => c.CustomerId == 100).FirstOrDefault()().Display();

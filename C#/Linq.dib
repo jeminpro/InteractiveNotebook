@@ -180,7 +180,7 @@ var orders = new List<Order>
 
 var filteringLambdaSyntax = orders.Where(o => o.CustomerId == 8);
 
-filteringLambda.Display("application/json");    // for output
+filteringLambdaSyntax.Display("application/json");    // for output
 
 var filteringQuerySyntax = from o in orders
           where o.CustomerId == 8
@@ -367,4 +367,21 @@ singleOrDefaultCustomerInLambdaSyntax.Display();
 #!csharp
 
 customers.First().Display();
-customers.Where(c => c.CustomerId == 100).FirstOrDefault()().Display();
+customers.Where(c => c.CustomerId == 100).FirstOrDefault().Display();
+
+customers.Last().Display();
+customers.Where(c => c.CustomerId == 100).LastOrDefault().Display();
+
+customers.ElementAt(5).Display();
+customers.ElementAtOrDefault(15).Display();
+
+#!markdown
+
+### Conversions
+
+#!csharp
+
+customers.Select(c => c.Name).ToArray().Display();
+customers.ToDictionary(c => c.CustomerId, c => c.Name).Display();
+customers.ToList().Display();
+customers.ToLookup(c => c.CustomerId, c => c.Name).Display();

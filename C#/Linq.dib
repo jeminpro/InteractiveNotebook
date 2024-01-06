@@ -102,74 +102,74 @@ public class Order
 
 var customers = new List<Customer>
 {
-    new Customer { CustomerID = 1, Name = "Alice Antiques" },
-    new Customer { CustomerID = 2, Name = "Bob Burgers" },
-    new Customer { CustomerID = 3, Name = "Smith James" },
-    new Customer { CustomerID = 4, Name = "Jolly Rodgers" },
-    new Customer { CustomerID = 5, Name = "Jack Allice" },
-    new Customer { CustomerID = 6, Name = "Ram Nivas" },
-    new Customer { CustomerID = 7, Name = "Ravi Shanker" },
-    new Customer { CustomerID = 8, Name = "Alice Blobs" },
-    new Customer { CustomerID = 9, Name = "Jami Johns" },
-    new Customer { CustomerID = 10, Name = "Fluff Rodger" }
+    new Customer { CustomerId = 1, Name = "Alice Antiques" },
+    new Customer { CustomerId = 2, Name = "Bob Burgers" },
+    new Customer { CustomerId = 3, Name = "Smith James" },
+    new Customer { CustomerId = 4, Name = "Jolly Rodgers" },
+    new Customer { CustomerId = 5, Name = "Jack Allice" },
+    new Customer { CustomerId = 6, Name = "Ram Nivas" },
+    new Customer { CustomerId = 7, Name = "Ravi Shanker" },
+    new Customer { CustomerId = 8, Name = "Alice Blobs" },
+    new Customer { CustomerId = 9, Name = "Jami Johns" },
+    new Customer { CustomerId = 10, Name = "Fluff Rodger" }
     
 };
 
 var orders = new List<Order>
 {
-    new Order { CustomerID = 1, OrderID = 1, Cost = 250.00m },
-    new Order { CustomerID = 1, OrderID = 2, Cost = 750.00m },
-    new Order { CustomerID = 1, OrderID = 3, Cost = 234.00m },
+    new Order { CustomerId = 1, OrderID = 1, Cost = 250.00m },
+    new Order { CustomerId = 1, OrderID = 2, Cost = 750.00m },
+    new Order { CustomerId = 1, OrderID = 3, Cost = 234.00m },
 
-    new Order { CustomerID = 2, OrderID = 4, Cost = 580.00m },
-    new Order { CustomerID = 2, OrderID = 5, Cost = 785.00m },
-    new Order { CustomerID = 2, OrderID = 6, Cost = 687.00m },
-    new Order { CustomerID = 2, OrderID = 7, Cost = 189.00m },
+    new Order { CustomerId = 2, OrderID = 4, Cost = 580.00m },
+    new Order { CustomerId = 2, OrderID = 5, Cost = 785.00m },
+    new Order { CustomerId = 2, OrderID = 6, Cost = 687.00m },
+    new Order { CustomerId = 2, OrderID = 7, Cost = 189.00m },
 
-    new Order { CustomerID = 3, OrderID = 8, Cost = 325.00m },
-    new Order { CustomerID = 3, OrderID = 9, Cost = 195.00m },
-    new Order { CustomerID = 3, OrderID = 10, Cost = 235.00m },
-    new Order { CustomerID = 3, OrderID = 11, Cost = 387.00m },
-    new Order { CustomerID = 3, OrderID = 12, Cost = 102.00m },
+    new Order { CustomerId = 3, OrderID = 8, Cost = 325.00m },
+    new Order { CustomerId = 3, OrderID = 9, Cost = 195.00m },
+    new Order { CustomerId = 3, OrderID = 10, Cost = 235.00m },
+    new Order { CustomerId = 3, OrderID = 11, Cost = 387.00m },
+    new Order { CustomerId = 3, OrderID = 12, Cost = 102.00m },
 
-    new Order { CustomerID = 4, OrderID = 13, Cost = 10.00m },
-    new Order { CustomerID = 4, OrderID = 14, Cost = 75.00m },
-    new Order { CustomerID = 4, OrderID = 15, Cost = 93.00m },
-    new Order { CustomerID = 4, OrderID = 16, Cost = 1250.00m },
-    new Order { CustomerID = 4, OrderID = 17, Cost = 587.00m },
-    new Order { CustomerID = 4, OrderID = 18, Cost = 985.00m },
+    new Order { CustomerId = 4, OrderID = 13, Cost = 10.00m },
+    new Order { CustomerId = 4, OrderID = 14, Cost = 75.00m },
+    new Order { CustomerId = 4, OrderID = 15, Cost = 93.00m },
+    new Order { CustomerId = 4, OrderID = 16, Cost = 1250.00m },
+    new Order { CustomerId = 4, OrderID = 17, Cost = 587.00m },
+    new Order { CustomerId = 4, OrderID = 18, Cost = 985.00m },
 
-    new Order { CustomerID = 5, OrderID = 19, Cost = 6225.00m },
-    new Order { CustomerID = 5, OrderID = 20, Cost = 748.00m },
+    new Order { CustomerId = 5, OrderID = 19, Cost = 6225.00m },
+    new Order { CustomerId = 5, OrderID = 20, Cost = 748.00m },
 
-    new Order { CustomerID = 6, OrderID = 21, Cost = 587.00m },
-    new Order { CustomerID = 6, OrderID = 22, Cost = 369.00m },
-    new Order { CustomerID = 6, OrderID = 23, Cost = 753.00m },
-    new Order { CustomerID = 6, OrderID = 24, Cost = 357.00m },
+    new Order { CustomerId = 6, OrderID = 21, Cost = 587.00m },
+    new Order { CustomerId = 6, OrderID = 22, Cost = 369.00m },
+    new Order { CustomerId = 6, OrderID = 23, Cost = 753.00m },
+    new Order { CustomerId = 6, OrderID = 24, Cost = 357.00m },
 
-    new Order { CustomerID = 7, OrderID = 25, Cost = 8977.00m },
-    new Order { CustomerID = 7, OrderID = 26, Cost = 987.00m },
-    new Order { CustomerID = 7, OrderID = 27, Cost = 654.00m },
+    new Order { CustomerId = 7, OrderID = 25, Cost = 8977.00m },
+    new Order { CustomerId = 7, OrderID = 26, Cost = 987.00m },
+    new Order { CustomerId = 7, OrderID = 27, Cost = 654.00m },
 
-    new Order { CustomerID = 8, OrderID = 28, Cost = 456.00m },
-    new Order { CustomerID = 8, OrderID = 29, Cost = 123.00m },
-    new Order { CustomerID = 8, OrderID = 30, Cost = 321.00m },
-    new Order { CustomerID = 8, OrderID = 31, Cost = 4567.00m },
-    new Order { CustomerID = 8, OrderID = 32, Cost = 897.00m },
-    new Order { CustomerID = 8, OrderID = 33, Cost = 658.00m },
-    new Order { CustomerID = 8, OrderID = 34, Cost = 789.00m },
+    new Order { CustomerId = 8, OrderID = 28, Cost = 456.00m },
+    new Order { CustomerId = 8, OrderID = 29, Cost = 123.00m },
+    new Order { CustomerId = 8, OrderID = 30, Cost = 321.00m },
+    new Order { CustomerId = 8, OrderID = 31, Cost = 4567.00m },
+    new Order { CustomerId = 8, OrderID = 32, Cost = 897.00m },
+    new Order { CustomerId = 8, OrderID = 33, Cost = 658.00m },
+    new Order { CustomerId = 8, OrderID = 34, Cost = 789.00m },
 
-    new Order { CustomerID = 9, OrderID = 35, Cost = 753.00m },
-    new Order { CustomerID = 9, OrderID = 36, Cost = 357.00m },
-    new Order { CustomerID = 9, OrderID = 37, Cost = 159.00m },
-    new Order { CustomerID = 9, OrderID = 38, Cost = 78954.00m },
-    new Order { CustomerID = 9, OrderID = 39, Cost = 1258.00m },
-    new Order { CustomerID = 9, OrderID = 40, Cost = 3698.00m },
-    new Order { CustomerID = 9, OrderID = 41, Cost = 7854.00m },
-    new Order { CustomerID = 9, OrderID = 42, Cost = 5874.00m },
-    new Order { CustomerID = 9, OrderID = 43, Cost = 35.00m },
-    new Order { CustomerID = 9, OrderID = 44, Cost = 147.00m },
-    new Order { CustomerID = 9, OrderID = 45, Cost = 3587.00m },
+    new Order { CustomerId = 9, OrderID = 35, Cost = 753.00m },
+    new Order { CustomerId = 9, OrderID = 36, Cost = 357.00m },
+    new Order { CustomerId = 9, OrderID = 37, Cost = 159.00m },
+    new Order { CustomerId = 9, OrderID = 38, Cost = 78954.00m },
+    new Order { CustomerId = 9, OrderID = 39, Cost = 1258.00m },
+    new Order { CustomerId = 9, OrderID = 40, Cost = 3698.00m },
+    new Order { CustomerId = 9, OrderID = 41, Cost = 7854.00m },
+    new Order { CustomerId = 9, OrderID = 42, Cost = 5874.00m },
+    new Order { CustomerId = 9, OrderID = 43, Cost = 35.00m },
+    new Order { CustomerId = 9, OrderID = 44, Cost = 147.00m },
+    new Order { CustomerId = 9, OrderID = 45, Cost = 3587.00m },
 };
 
 #!markdown
@@ -178,12 +178,12 @@ var orders = new List<Order>
 
 #!csharp
 
-var filteringLambdaSyntax = orders.Where(o => o.CustomerID == 8);
+var filteringLambdaSyntax = orders.Where(o => o.CustomerId == 8);
 
 filteringLambda.Display("application/json");    // for output
 
 var filteringQuerySyntax = from o in orders
-          where o.CustomerID == 8
+          where o.CustomerId == 8
           select o;
 
 #!markdown
@@ -234,13 +234,13 @@ var orderByCostDescendingInQuerySyntax = from o in orders
 
 #!csharp
 
-var orderByCustomerDescendingThenByCostDecendingInLambdaSyntax =    orders.OrderBy(o => o.CustomerID).     
+var orderByCustomerDescendingThenByCostDecendingInLambdaSyntax =    orders.OrderBy(o => o.CustomerId).     
                                                                     ThenByDescending(o => o.Cost);
 
 orderByCustomerDescendingThenByCostDecendingInLambdaSyntax.Display("application/json");
 
 var orderByCustomerDescendingThenByCostDescendingInQuerySyntax = from o in orders   
-                                                                orderby o.CustomerID, o.Cost descending            
+                                                                orderby o.CustomerId, o.Cost descending            
                                                                 select o; 
 
 #!markdown
@@ -250,10 +250,10 @@ var orderByCustomerDescendingThenByCostDescendingInQuerySyntax = from o in order
 #!csharp
 
 var joiningLambdaSyntax = customers.Join(orders,      
-            c => c.CustomerID,o => o.CustomerID,      
+            c => c.CustomerId,o => o.CustomerId,      
             (c, o) => new          
                 {              
-                    c.CustomerID,              
+                    c.CustomerId,              
                     c.Name,              
                     o.OrderID,              
                     o.Cost          
@@ -262,10 +262,10 @@ var joiningLambdaSyntax = customers.Join(orders,
 
 var joiningQuerySyntax =    from c in customers           
                             join o in orders on            
-                            c.CustomerID equals o.CustomerID           
+                            c.CustomerId equals o.CustomerId           
                             select new            
                             {               
-                                c.CustomerID,
+                                c.CustomerId,
                                 c.Name,                
                                 o.OrderID,                
                                 o.Cost           
@@ -280,18 +280,18 @@ joiningQuerySyntax
 #!csharp
 
 var customerOrderCountLambdaSyntax = orders.GroupBy(          
-            o => o.CustomerID).          
+            o => o.CustomerId).          
             Select(g => new           
             {               
-                CustomerID = g.Key,               
+                CustomerId = g.Key,               
                 TotalOrders = g.Count()           
             });
 
 var customerOrderCountQuerySyntax = from o in orders         
-                                    group o by o.CustomerID into g         
+                                    group o by o.CustomerId into g         
                                     select new         
                                     {             
-                                        CustomerID = g.Key,             
+                                        CustomerId = g.Key,             
                                         TotalOrders = g.Count()         
                                     }; 
 
@@ -303,22 +303,22 @@ customerOrderCountQuerySyntax
 
 #!csharp
 
-var selectTop3InLambdaSyntax = orders.Where(o => o.CustomerID == 8).Take(3);
+var selectTop3InLambdaSyntax = orders.Where(o => o.CustomerId == 8).Take(3);
 selectTop3InLambdaSyntax.Display("application/json");
 
 var selectTop3InQuerySyntax =   (from o in orders
-            where o.CustomerID == 8            
+            where o.CustomerId == 8            
             select o).Take(3); 
 
 selectTop3InQuerySyntax.Display("application/json");
 
 #!csharp
 
-var skipFirst2AndReturn2AfterInLambdaSyntax = orders.Where(o => o.CustomerID == 8).Skip(2).Take(2);
+var skipFirst2AndReturn2AfterInLambdaSyntax = orders.Where(o => o.CustomerId == 8).Skip(2).Take(2);
 skipFirst2AndReturn2AfterInLambdaSyntax.Display();
 
 var skipFirst2AndReturn2AfterInQuerySyntax = (from o in orders            
-                                            where o.CustomerID == 8 
+                                            where o.CustomerId == 8 
                                             select o).Skip(2).Take(2); 
 
 skipFirst2AndReturn2AfterInQuerySyntax.Display();
@@ -339,15 +339,15 @@ Exact one or returns default (i.e. null or 0 etc depending on datatype) if no it
 
 #!csharp
 
-var singleCustomerInLambdaSyntax = customers.Single(c => c.CustomerID == 8);
+var singleCustomerInLambdaSyntax = customers.Single(c => c.CustomerId == 8);
 singleCustomerInLambdaSyntax.Display();
 
 var singleCustomerInQuerySyntax = (from c in customers
-                                    where c.CustomerID == 8
+                                    where c.CustomerId == 8
                                     select c).Single();
 singleCustomerInQuerySyntax.Display();
 
-var singleOrDefaultCustomerInLambdaSyntax = customers.SingleOrDefault(c => c.CustomerID == 88);
+var singleOrDefaultCustomerInLambdaSyntax = customers.SingleOrDefault(c => c.CustomerId == 88);
 singleOrDefaultCustomerInLambdaSyntax.Display();
 
 #!markdown

@@ -176,6 +176,10 @@ var orders = new List<Order>
 
 ### Filtering
 
+#!markdown
+
+#### Where
+
 #!csharp
 
 var filteringLambdaSyntax = orders.Where(o => o.CustomerId == 8);
@@ -185,6 +189,15 @@ filteringLambdaSyntax.Display("application/json");    // for output
 var filteringQuerySyntax = from o in orders
           where o.CustomerId == 8
           select o;
+
+#!markdown
+
+#### Contains (Similar to SQL `IN` query)
+
+#!csharp
+
+var filteringLambdaContainsSyntax = orders.Where(o => (new List<int> { 1, 6, 7}).Contains(o.CustomerId));
+filteringLambdaContainsSyntax.Display("application/json");
 
 #!markdown
 

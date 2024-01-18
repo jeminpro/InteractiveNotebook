@@ -1,0 +1,4 @@
+# Linq Cheat sheet
+
+
+TODO

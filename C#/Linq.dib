@@ -4,6 +4,11 @@
 
 #!markdown
 
+### Top resources
+
+[Linq Samples - Website](https://linqsamples.com) \
+[Linq Cheatsheet -PDF](https://vslapp.files.wordpress.com/2011/11/linq-cheatsheet.pdf) 
+
 # Linq basic concepts
 
 LINQ (Language-Integrated Query) is a feature in C# that allows you to write expressive code for querying and manipulating data. 
@@ -81,9 +86,9 @@ complexQuery
 
 # Cheetsheet
 
-Reference doc [here](https://vslapp.files.wordpress.com/2011/11/linq-cheatsheet.pdf)
+#!markdown
 
-Initilizing
+## Initilizing
 
 #!csharp
 
@@ -174,11 +179,11 @@ var orders = new List<Order>
 
 #!markdown
 
-### Filtering
+## Filtering
 
 #!markdown
 
-#### Where
+### Where
 
 #!csharp
 
@@ -192,7 +197,7 @@ var filteringQuerySyntax = from o in orders
 
 #!markdown
 
-#### Contains (Similar to SQL `IN` query)
+### Contains (Similar to SQL `IN` query)
 
 #!csharp
 
@@ -201,7 +206,7 @@ filteringLambdaContainsSyntax.Display("application/json");
 
 #!markdown
 
-### Return Anonymous Type
+## Return Anonymous Type
 
 #!csharp
 
@@ -223,7 +228,7 @@ var returnAnonymousTypeQuerySyntax =   from o in orders
 
 #!markdown
 
-### Ordering
+## Ordering
 
 #!csharp
 
@@ -258,7 +263,7 @@ var orderByCustomerDescendingThenByCostDescendingInQuerySyntax = from o in order
 
 #!markdown
 
-### Joining
+## Joining
 
 #!csharp
 
@@ -288,7 +293,7 @@ joiningQuerySyntax
 
 #!markdown
 
-### Grouping
+## Grouping
 
 #!csharp
 
@@ -312,7 +317,7 @@ customerOrderCountQuerySyntax
 
 #!markdown
 
-### Paging (using Skip & Take) 
+## Paging (using Skip & Take) 
 
 #!csharp
 
@@ -338,7 +343,7 @@ skipFirst2AndReturn2AfterInQuerySyntax.Display();
 
 #!markdown
 
-### Element Operators
+## Element Operators
 
 #!markdown
 
@@ -390,7 +395,7 @@ customers.ElementAtOrDefault(15).Display();
 
 #!markdown
 
-### Conversions
+## Conversions
 
 #!csharp
 
